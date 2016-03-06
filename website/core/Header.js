@@ -25,7 +25,8 @@ var Header = React.createClass({
       <H {...this.props}>
         <a className="anchor" name={slug}></a>
         {this.props.children}
-        {' '}<a className="hash-link" href={base + '#' + slug}>#</a>
+
+        {' '}<a className="hash-link" href={this.props.path + '#' + slug}>#</a>
       </H>
     );
   }
